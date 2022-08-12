@@ -7,9 +7,15 @@
 }
 
 .topo {
+    background-color: #CF2B2B;
+
     width: 414px;
     height: 92px;
-    background-color: #CF2B2B;
+
+    margin-top: 0;
+    margin-left: 0;
+
+    position: fixed;
 }
 
 .letra-topo-titulo {
@@ -17,11 +23,12 @@
 
     width: 248px;
 
-    margin-top: 8px;
-    margin-left: 21px;
-
     font-size: 44px;
     letter-spacing: -0.012em;
+    font-family: 'Righteous', cursive;
+
+    margin-top: 8px;
+    margin-left: 21px;
 }
 
 
@@ -34,6 +41,9 @@
     margin-top: 5px;
     margin-left: 21px;
 
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
     font-size: 18px;
     letter-spacing: -0.012em;
 }
@@ -43,8 +53,9 @@
     height: 25px; 
 
     font-size: 26px;
+    font-family: 'Righteous';
 
-    margin-top: 31px;
+    margin-top: 29px;
     margin-left: 19px;
 }
 
@@ -55,10 +66,53 @@
 }
 
 .caixa {
-
     background-color: white;
+
     width: 172px;
     height: 216px;
 
     margin-left: 19px;
+}
+
+img {
+    width: 144px;
+    height: 87px;
+
+    margin-top: 18px;
+    margin-left: 14px;
+    margin-right: 14px;
+
+    border-radius: 4px;
+}
+
+.fonte-titulo {
+    width: 139px;
+    height: 23px;
+
+    font-size: 16px;
+
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.fonte-sub {
+    color:#A6A6A6;
+
+    width: 147px;
+    height: 39px;
+
+    font-size: 15px;
+
+    margin-left: 15px;
+    margin-top: 4px;
+}
+
+.fonte-valor {
+    width: 66px;
+    height: 19px;
+
+    font-size: 16px;
+
+    margin-left: 15px;
+    margin-top: 5px;
 }
