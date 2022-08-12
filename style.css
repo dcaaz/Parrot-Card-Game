@@ -12,10 +12,10 @@
     width: 414px;
     height: 92px;
 
-    margin-top: 0;
+    margin-top: -10;
     margin-left: 0;
 
-    position: fixed;
+    position: absolute;
 }
 
 .letra-topo-titulo {
@@ -54,6 +54,7 @@
 
     font-size: 26px;
     font-family: 'Righteous';
+    white-space: nowrap;
 
     margin-top: 29px;
     margin-left: 19px;
@@ -89,10 +90,13 @@ img {
     width: 139px;
     height: 23px;
 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
     font-size: 16px;
+    line-height: 19px;
 
     margin-left: 15px;
-    margin-top: 20px;
 }
 
 .fonte-sub {
@@ -101,18 +105,24 @@ img {
     width: 147px;
     height: 39px;
 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
     font-size: 15px;
+    line-height: 18px;
 
     margin-left: 15px;
-    margin-top: 4px;
 }
 
 .fonte-valor {
     width: 66px;
     height: 19px;
 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
     font-size: 16px;
+    line-height: 19px;
 
     margin-left: 15px;
-    margin-top: 5px;
 }
