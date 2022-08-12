@@ -1,0 +1,64 @@
+.body {
+    width: 414px;
+}
+
+.maior {
+    background-color: #EEEEEE;
+}
+
+.topo {
+    width: 414px;
+    height: 92px;
+    background-color: #CF2B2B;
+}
+
+.letra-topo-titulo {
+    color: white;
+
+    width: 248px;
+
+    margin-top: 8px;
+    margin-left: 21px;
+
+    font-size: 44px;
+    letter-spacing: -0.012em;
+}
+
+
+.letra-topo-sub {
+    color: white;
+
+    width: 226px;
+    height: 17px;
+
+    margin-top: 5px;
+    margin-left: 21px;
+
+    font-size: 18px;
+    letter-spacing: -0.012em;
+}
+
+.titulo-caixa {
+    width: 250px;
+    height: 25px; 
+
+    font-size: 26px;
+
+    margin-top: 31px;
+    margin-left: 19px;
+}
+
+.caixa-maior {
+    margin-top: 17px;
+
+    display: flex;
+}
+
+.caixa {
+
+    background-color: white;
+    width: 172px;
+    height: 216px;
+
+    margin-left: 19px;
+}
