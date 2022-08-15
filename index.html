@@ -20,91 +20,106 @@
          <p class="letra-topo-sub">Sua comida em 6 minutos</p></div>
       <!--/topo-->
       <!--primeiraCaixa-->
-      <div class="comidas">
+<div class="comidas">
       <div><p class="titulo-caixa">Primeiro, seu prato</p>
       </div>
-   <div class="caixa-maior">
-      <div class="caixa">
+<div class="caixa-maior comidas">
+      <div class="caixa" onclick="selecionarComida(this);">
       <img class="imagem" src="./imagem/prato-veg.png">   
       <p><b class="fonte-titulo">Vegano</b></p>
       <p  class="fonte-sub">Contém variedades, <br>muita salada</p>
       <p  class="fonte-valor">R$ 14,90</p>
-      </div>
+      <ion-icon class="icone-off" name="checkmark-circle"></ion-icon>
+      </div> 
 
-      <div class="caixa">
+      <div class="caixa" onclick="selecionarComida(this);">    
       <img class="imagem" src="./imagem/prato-veg-2.png">   
       <p><b class="fonte-titulo">Vegano</b></p>
       <p  class="fonte-sub">Contém variedades, <br>muita salada</p>
       <p  class="fonte-valor">R$ 14,90</p>
+      <ion-icon class="icone-off" name="checkmark-circle"></ion-icon>
       </div>
          
-      <div class="caixa">
+      <div class="caixa" onclick="selecionarComida(this);">   
       <img class="imagem" src="./imagem/prato-veg-3.png">   
       <p><b class="fonte-titulo">Vegano</b></p>
       <p  class="fonte-sub">Contém variedades, <br>muita salada</p>
       <p  class="fonte-valor">R$ 14,90</p>
+      <ion-icon class="icone-off" name="checkmark-circle"></ion-icon>
       </div>
-      </div><!--/primeiraCaixa-->
+</div><!--/primeiraCaixa-->
 
     <!--segundaCaixa-->
-    <div><p class="titulo-caixa">Agora, sua bebida</p>
-    </div>
- <div class="caixa-maior">
-   <div class="caixa">
+      <div><p class="titulo-caixa">Agora, sua bebida</p>
+      </div>
+<div class="caixa-maior bebidas">
+      <div class="caixa" onclick="selecionarBebida(this)"> 
       <img class="imagem" src="./imagem/acerola.png">   
       <p><b class="fonte-titulo">Suco acerola</b></p>
       <p  class="fonte-sub">Suco 500 ml</p>
       <p  class="fonte-valor">R$ 4,90</p>
+      <ion-icon class="icone-off" name="checkmark-circle"></ion-icon>
       </div>
 
-      <div class="caixa">
+      <div class="caixa" onclick="selecionarBebida(this)">  
       <img class="imagem" src="./imagem/laranja.png">   
       <p><b class="fonte-titulo">Suco laranja</b></p>
       <p  class="fonte-sub">Suco 500 ml</p>
       <p  class="fonte-valor">R$ 4,90</p>
+      <ion-icon class="icone-off" name="checkmark-circle"></ion-icon>
       </div>
          
-      <div class="caixa">
+      <div class="caixa" onclick="selecionarBebida(this)">
       <img class="imagem" src="./imagem/maracujá.png">   
       <p><b class="fonte-titulo">Suco maracujá</b></p>
       <p  class="fonte-sub">Suco 500 ml</p>
       <p  class="fonte-valor">R$ 4,90</p>
+      <ion-icon class="icone-off" name="checkmark-circle"></ion-icon>
       </div>
  </div><!--/segundaCaixa-->
 
   <!--terceiraCaixa-->
   <div><p class="titulo-caixa">Por fim, sua sobremesa</p>
   </div>
-<div class="caixa-maior">
-   <div class="caixa">
+<div class="caixa-maior espaço sobremesas">
+   <div class="caixa" onclick="selecionarSobremesa(this)">
       <img class="imagem" src="./imagem/sobremesa.png">   
-      <p><b class="fonte-titulo">Vegano</b></p>
+      <p><b class="fonte-titulo">Sobremesa</b></p>
       <p  class="fonte-sub">Pudim de chia</p>
       <p  class="fonte-valor">R$ 7,90</p>
+      <ion-icon class="icone-off" name="checkmark-circle"></ion-icon>
       </div>
 
-      <div class="caixa">
+      <div class="caixa" onclick="selecionarSobremesa(this)">
       <img class="imagem" src="./imagem/sobremesa2.png">   
-      <p><b class="fonte-titulo">Vegano</b></p>
+      <p><b class="fonte-titulo">Sobremesa</b></p>
       <p  class="fonte-sub">Torta de maracujá</p>
       <p  class="fonte-valor">R$ 7,90</p>
+      <ion-icon class="icone-off" name="checkmark-circle"></ion-icon>
       </div>
          
-      <div class="caixa">
+      <div class="caixa" onclick="selecionarSobremesa(this)">
       <img class="imagem" src="./imagem/sobremesa3.png">   
-      <p><b class="fonte-titulo">Vegano</b></p>
+      <p><b class="fonte-titulo">Sobremesa</b></p>
       <p  class="fonte-sub">Mousse de chocolate</p>
       <p  class="fonte-valor">R$ 7,90</p>
+      <ion-icon class="icone-off" name="checkmark-circle"></ion-icon>
       </div>
-      </div><!--/terceiraCaixa-->
-      </div><!--/comidas-->
+</div><!--/terceiraCaixa-->
+</div><!--/comidas-->
 
-      <div class="botão-pedido">
+      <div class="botão-pedido" button onclick="encaminharWhatsApp()">
          <div class="fonte-botão">Selecione os 3 itens<br> 
             para fechamento de pedido</div>
       </div>
+   </button>      
+      </div>
 
 </div><!--/maior-->
+
+<script  type = "module"  src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" > </script> 
+<script  nomodule  src = "https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js" > </script>
         
    </body>
+   <script src="script.js"></script>  
 </html>
