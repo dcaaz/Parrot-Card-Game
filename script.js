@@ -4,7 +4,10 @@ let imagemFrente = './imagens/front.png';
 
 criarCartas();
 
+var jogadas = 0;
+
 function criarCartas() {
+    jogadas = 0;
     let cartasAnteriores = document.querySelectorAll('.carta');
     for (let i = 0; i < cartasAnteriores.length; i++) {
         cartasAnteriores[i].remove();
@@ -41,6 +44,7 @@ function criarCartas() {
 } 
 
 async function virarCarta(elementoHtml, caminhoImagemVirada, qtdeCartas) {
+    jogadas++;
     let virada = elementoHtml.classList.toggle('virada');
 
     elementoHtml.style.backgroundImage = `url(${virada ? caminhoImagemVirada : imagemFrente})`;
@@ -64,7 +68,7 @@ async function virarCarta(elementoHtml, caminhoImagemVirada, qtdeCartas) {
             virada1.classList.add('par');
 
             let pares = document.querySelectorAll('.par');
-            if (pares.length == qtdeCartas && confirm('Você ganhou em X jogadas! Deseja jogar novamente?')) {
+            if (pares.length == qtdeCartas && confirm(`Você ganhou em ${jogadas} jogadas! Deseja jogar novamente?`)) {
                 criarCartas();
             }
         } else {
