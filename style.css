@@ -67,3 +67,27 @@ img {
     transform: rotatey(180deg);
     transform-style: preserve-3d;
 }
+
+@media (max-width: 600px) {
+	.topo {
+        width: 100%;
+
+        font-size: 36px;
+        line-height: 42.19px;
+        white-space: pre-wrap;
+        
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
+	}
+
+
+
+    .baralho {
+        margin-left: auto;
+        margin-right: auto;
+
+        flex-direction: column;
+    }
+}
