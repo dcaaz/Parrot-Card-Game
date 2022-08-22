@@ -19,15 +19,6 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-
-.cronômetro {
-    width: 100px;
-    height: 50px;
-    border-radius: 10px;
-    background-color: orange;
-    margin-left: 50px;
-}
-
 .baralho {
     margin-top: 47px;
     margin-left: 120px;
@@ -69,19 +60,19 @@ img {
 }
 
 @media (max-width: 600px) {
-	.topo {
+    .topo1 {
         width: 100%;
+    }
 
+	.topo {
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
         font-size: 36px;
         line-height: 42.19px;
         white-space: pre-wrap;
-        
-        margin-left: auto;
-        margin-right: auto;
-        justify-content: center;
-        align-items: center;
 	}
-
 
 
     .baralho {
@@ -90,4 +81,10 @@ img {
 
         flex-direction: column;
     }
+
+    .carta {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
 }
