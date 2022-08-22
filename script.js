@@ -64,7 +64,7 @@ async function virarCarta(elementoHtml, caminhoImagemVirada, qtdeCartas) {
             virada1.classList.add('par');
 
             let pares = document.querySelectorAll('.par');
-            if (pares.length == qtdeCartas && confirm('Quer jogar de novo?')) {
+            if (pares.length == qtdeCartas && confirm('Você ganhou em X jogadas! Deseja jogar novamente?')) {
                 criarCartas();
             }
         } else {
